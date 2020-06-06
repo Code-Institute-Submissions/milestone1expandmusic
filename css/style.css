@@ -1,36 +1,77 @@
 
 /*-------------Colors---------------------*/
-.row{
-    border-style: solid;
-    border-color: yellow;
-}
 .body{
     border-style: solid;
     border-color: purple;
 }
 
-.container{
+.container-fluid{
+     border-color: green;
+     background-color:  #cbcbc9;
+}
+
+.logo{
+    border-color:#60342e;
+}
+
+.nav{
+    border-color:#60342e;
+    background-color: #cbcbc9;
+
+}
+
+.nav ul{
+    border-color: pink;
+    border-style: solid;
+
+}
+
+nav ul li{
+    border-style: solid;
+    border-color: orange;
+}
+
+nav ul li a:hover{
+    color: #b7a786;
+}
+
+.row{
+    
+    
+}
+
+
+section {
+    background-color:  #cbcbc9;
+}
+
+/*------------Container and rows---------------*/
+.container-fluid{
  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-color: green;
   border-style: solid;
   margin: 0;
   padding: 0; 
-  
 }
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
 /*-------------Logo------------------------
 Logo image created from Free logo maker looka.com */
 
 .logo{
-    border-style: solid;
-    border-color:#60342e;
     background: url("../images/Logo.jpg") center no-repeat; 
     background-size: cover;
     margin: 0px;
     padding: 40px;
-    width: 100;
+    width: 100%;
+    display: block;
+    border-style: solid;
 }
 
 /*-------------Navigation menu------------*/
@@ -39,34 +80,55 @@ nav{
     margin: 0;
     padding-left: 0;
     border-style: solid;
-    border-color: red;
-    background-color: #cbcbc9;
-      
 }
 nav ul{
     list-style: none;
     margin: 0;
     width: 100%;
-    border-style: solid;
-    border-color: pink;
     font-size: 16px;
     text-align: left;
     padding-left: 0;
     display: inline;
     float: left;
+    
+}
+
+nav ul li a{
+    color: #1d282a;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-nav ul li{
-    border-style: solid;
-    border-color: orange;
+.navbar{
+    border: 0;
+    width: 100%;
+}
+.navbar .navbar-toggler {
+    border: 0;
 }
 
+
+
 /*-------------Header---------------------
-Background image from home-hero class. Credit: Stefany Andrade https://unsplash.com/photos/GbSCAAsU2Fo */
+Background image from home-hero class. Credit: Stefany Andrade https://unsplash.com/photos/GbSCAAsU2Fo 
+Background image from home-hero-school class. Credit: Valentino-funghi https://unsplash.com */
 .home-hero{
  background: url("../images/header-home.jpg") center no-repeat; 
+ background-size: cover;
+ display: flex inline;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ border-color: black;
+ border-style: solid;
+ margin: 0;
+ padding: 0;
+ color: #25282b;
+ line-height: 1;
+ height: 300px;
+  
+}
+.home-hero-school{
+ background: url("../images/school.jpg") center no-repeat; 
  background-size: cover;
  display: flex inline;
  align-items: center;
@@ -89,28 +151,68 @@ Background image from home-hero class. Credit: Stefany Andrade https://unsplash.
     width: 500px;
     display: flex;
     margin: 20px 20px;
+    padding: 10px;
     border: solid;
     border-color:#60342e;
-    
 }
+@media (min-width: 300px) {
+    .jumbotron {
+        font-size: 4em;
+        width:50%;
+    }
+}
+
 .hero-text h2{
     font-weight: 700;
-    display: block;
     margin: 5px;
     
 }
 .hero-text p{
     font-weight: 400;
-    display: block;
+    padding: 20px 20px;
+    
+    font-size: 18px;
+    position: relative;
+    
    
 }
 /*-------------Central Section------------*/
-.section{
-    margin-left: 0;
-    padding-left: 0;
+.options h2{
+      color: #1d282a;
+      margin: 20px 20px;
+}
+
+.options-courses h2, h3{
+      color: #1d282a;
+      margin: 20px 20px;
+      border-style: solid;
+}
+
+.feature-course{
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.courses{
+    border-style: solid;
+    border-color: yellow;
 }
 
 
+}
+.section{
+    margin-left: 0;
+    padding-left: 0;
+  
+}
+
+.btn:hover{
+background-color: #1d282a; 
+border-color:  #1d282a;
+color: #b7a786;
+}
 
 /*-------------Footer------------*/
 footer{
@@ -121,9 +223,38 @@ footer{
     background-color: #1d282a;
     display: flex;
     width: 100%;
+    color: #cbcbc9;
     
 }
 
+footer div{
+    border-style: solid;
+    border-color: blue;
+    
+}
+
+footer p{
+    
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+}
+
 footer ul{
+   
+    border-style: solid;
+    border-color: orange;
+    
+}
+
+footer ul li{
     list-style: none;
+    background-color: #1d282a;
+}
+footer ul li a{
+    color: #cbcbc9;
+}
+
+footer ul li a:hover{
+    color: #b7a786;
 }
