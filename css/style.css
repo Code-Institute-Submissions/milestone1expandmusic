@@ -3,6 +3,7 @@
 .body{
     border-style: solid;
     border-color: purple;
+    
 }
 
 .container-fluid{
@@ -12,6 +13,11 @@
 
 .logo{
     border-color:#60342e;
+}
+
+header{
+    border-color: fuchsia;
+    border-style: solid;
 }
 
 .nav{
@@ -26,16 +32,18 @@
 
 }
 
-nav ul li{
+.navbar-nav li{
     border-style: solid;
     border-color: orange;
 }
 
-nav ul li a:hover{
+.navbar-nav li a:hover{
     color: #b7a786;
 }
 
 .row{
+    border-style: solid;
+    border-color: yellow;
     
 }
 
@@ -43,11 +51,26 @@ section {
     background-color:  #cbcbc9;
 }
 
+footer div{
+    border-style: solid;
+    border-color: blue;
+    
+}
+
 footer ul{
    
     border-style: solid;
     border-color: orange;
-    
+}
+/*------------Tests---------------*/
+html, body{
+            
+            height: 100%;
+            margin: 0;
+            padding: 0; 
+            border: 0;
+            min-width: 100%;
+
 }
 
 /*------------Container and rows---------------*/
@@ -60,11 +83,16 @@ footer ul{
   margin: 0;
   padding: 0; 
   position: relative;
+  min-height: 100%;
+  width: 100%;
+  
 }
 
+
 .row{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    
 }
 
 /*-------------Logo------------------------
@@ -80,14 +108,27 @@ Logo image created from Free logo maker looka.com */
     border-style: solid;
 }
 
+.logosmall{
+    background: url("../images/Logo.jpg") center no-repeat; 
+    background-size: cover;
+    margin: 0px;
+    padding: 60% 100%;
+    width: 100%;
+    border-color: brown;
+    border-style: solid;
+    
+}
+
 /*-------------Navigation menu------------*/
 
 nav{
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     border-style: solid;
+    z-index:2;
+    
 }
-nav ul{
+.navbar-nav {
     list-style: none;
     margin: 0;
     width: 100%;
@@ -99,7 +140,7 @@ nav ul{
     
 }
 
-nav ul li a{
+.navbar-nav li a{
     color: #1d282a;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -110,6 +151,7 @@ nav ul li a{
 }
 .navbar .navbar-toggler {
     border: 0;
+    
 }
 
 
@@ -121,17 +163,16 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
 .home-hero{
  background: url("../images/header-home.jpg") center no-repeat; 
  background-size: cover;
- display: flex inline;
  align-items: center;
  justify-content: center;
  position: relative;
  border-color: black;
  border-style: solid;
- margin: 0;
  padding: 0;
  color: #25282b;
  line-height: 1;
- height: 300px;
+ width: 100%;
+ 
   
 }
 .home-hero-school{
@@ -147,7 +188,7 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
  padding: 0;
  color: #25282b;
  line-height: 1;
- height: 300px;
+ 
   
 }
 
@@ -164,7 +205,7 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
  padding: 0;
  color: #25282b;
  line-height: 1;
- height: 300px;
+ height: 300px; /* */
   
 }
 
@@ -172,7 +213,7 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
     background-color: #1d282a;
     opacity: 0.8;
     color: #b39f77;
-    width: 500px;
+    width: 100%;
     display: flex;
     margin: 20px 20px;
     padding: 10px;
@@ -182,7 +223,7 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
 @media (min-width: 300px) {
     .jumbotron {
         font-size: 4em;
-        width:50%;
+        width:57%;
     }
 }
 
@@ -201,11 +242,23 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
    
 }
 /*-------------Central Section home and common------------*/
+
+
 .options h2{
       color: #1d282a;
       margin-bottom: 10px;
       margin-left: 0px;
       margin-top: 5px;
+}
+
+.feature{
+     border: 1px solid;
+     border-radius: 5px;
+     -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
+     box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
+     margin-left: 20px;
+     margin-bottom: 20px;
+    
 }
 
 .feature h3{
@@ -228,6 +281,11 @@ border-color:  #1d282a;
 color: #b7a786;
 }
 
+.feature .btn{
+    border-style: solid;
+    border-color: #25282b;
+}
+
 /*-------------Central Section school------------*/
 .options-courses h2, h3{
       color: #1d282a;
@@ -237,11 +295,18 @@ color: #b7a786;
 }
 
 .feature-course{
-    border-style: solid;
+    border: 1px solid;
     border-radius: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
+    -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
+    box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
     
+}
+
+.feature-course .btn{
+    border: 1px solid;
+
 }
 
 .courses{
@@ -256,7 +321,7 @@ Background image from Store page guitars category. Credit: Free for personal use
 Background image from Store page Strings category. Credit: Free for personal use only. https://www.stickpng.com/img/objects/music/violin/violin-classic
 Background image from Store page Percussion category. Credit: Free for personal use only. https://www.stickpng.com/img/objects/music/drums/drums-green-pearl */
 .feature-store{
-    border-style: solid;
+    border: 1px solid;
     border-radius: 5px;
     margin-bottom: 5px;
     background-color: #f4f4f4;
@@ -314,9 +379,9 @@ Background image from Store page Percussion category. Credit: Free for personal 
 /*-------------Central section Contact page-------*/
 
 .feature-contact{
-    border-style: solid;
+    border: 1px solid;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 0px;
     color: #1d282a;
     background-color:rgba(240, 240, 240,1);
@@ -328,6 +393,10 @@ Background image from Store page Percussion category. Credit: Free for personal 
 
 input:invalid {
   border: 2px solid red;
+}
+
+.form-row{
+    margin-left: 0;
 }
 
 
@@ -358,11 +427,14 @@ textarea:valid {
 }
 
 .btn-submit{
+    border-style: solid;
+    border-color: #25282b;
+    margin-bottom: 10px;
     
 }
 /*---------central section About page-------*/
 .feature-about{
-    border-style: solid;
+    border: 1px solid;
     border-radius: 5px;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -371,29 +443,29 @@ textarea:valid {
 
 
 /*-------------Footer------------*/
+
+
 footer{
     border-style: solid;
     border-color: red;
     margin: 0;
     padding: 0;
     background-color: #1d282a;
-    display: flex;
+    height: 100%;
+    max-height: 175px;
     width: 100%;
     color: #cbcbc9;
     
 }
 
-footer div{
-    border-style: solid;
-    border-color: blue;
-    
-}
 
 footer p{
     
     text-align: center;
     border-style: solid;
     border-color: red;
+    max-height: fit-content;
+    
 }
 
 
@@ -403,6 +475,11 @@ footer ul li{
 }
 footer ul li a{
     color: #cbcbc9;
+    
+}
+
+footer ul li a:hover{
+    color: #b7a786;
 }
 
 footer ul li a i:hover{

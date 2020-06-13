@@ -22,7 +22,7 @@
          <!-- Navigation menus-->
             <div class="row">
                 <nav class="navbar col-2 navbar-expand-sm">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,14 +31,11 @@
                             <div class="logo">
                                 <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
                             </div>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="store.html"> Our School</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="school.html"> Our Store</a>
+                                <a class="nav-link" href="contact.html"> Contact Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html">About</a>
@@ -46,9 +43,10 @@
                         </ul>
                     </div>
                 </nav>
-
-                 <header class="home-hero col-10 offset-2">
-                <!--Home-hero contains the music image-->
+            
+             <!--Home-hero contains the music image-->
+             
+                 <header class="home-hero  col-10 d-inline">
                     <div class="hero-text jumbotron col-xs-2">
                         <h2>Go further</h2>
                         <p>Your place to find the music knowledge and the perfect instrument to play!</p>
@@ -57,44 +55,38 @@
             </div>
 
         <!---Section  specific content of the page----->
-            <div class="row">
+            <div class="form-row">
                     <section class="col-9 offset-2">
                         <div class="row justify-content-center">
                             <h2>Do you want to know more?</h2>
-                            <div class="feature-contact  col-sm-9 d-flex justify-content-center">
-                                
+                            <div class="feature-contact  col-sm-9">
                                 <form action="#" method="post" name="form" id="form" autoc novalidate="true">
-                                <div class="form-row align-items-center col-sm-9">
-                                <div class="row col-sm-12">
+                                <div class="form-row col-sm-9">
                                     
-                                        <legend>Your details</legend>
-                                        <div class="col-auto">
+                                        <legend>Fill in this form</legend>
+                                        <div class="col-6 personaldata">
                                             <label for="fname"> Name </label>
                                             <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter your First name" required data-error="First name is required.">
                                         </div>
-                                        <div class="col-auto">
+                                        <div class="col-6 personaldata">
                                             <label for="lname"> Last Name </label>
                                             <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter your Last name" required data-error="Lastname is required.">
                                         </div>
-                                        <div class="col-auto">
+                                        <div class="col-6 personaldata">
                                             <label for="email"> Email address </label>
                                             <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" required data-error="Valid email is required.">
                                         </div>
                                     
-                                </div>
-                                <div class="row col-sm-12">
-                                        
-
-                                        <div class="col gender">
-                                            <label for="gender">Gender</label><br>
-                                            <input type="radio" name="gender" value="male">Male<br>
-                                            <input type="radio" name="gender" value="female">Female<br>
-                                            <input type="radio" name="gender" value="othergender">Other<br>
-                                        </div>
-                                </div>
+                                    <div class="col-sm-9">
+                                            <div class="col gender ml-2">
+                                                <label for="gender">Gender</label><br>
+                                                <input type="radio" name="gender" value="male">Male<br>
+                                                <input type="radio" name="gender" value="female">Female<br>
+                                                <input type="radio" name="gender" value="othergender">Other<br>
+                                            </div>
+                                    </div>
                                     
-
-                                    <div class="form-check">
+                                    <div class="form-check ml-3">
                                         <p>I want to...</p>
                                         <input class="form-check-input" type="checkbox" name="querytype" value="learn"> 
                                         <label class="form-check-label" for="check"> Learn to Play</label>
@@ -107,10 +99,9 @@
                                         <br>
                                     </div>
                                     
-
                                     <div class="form-classes">
-                                        <label class="mr-5" for="clases">Clases</label>
-                                        <select class="custom-select mr-sm-2" required="required"  data-error="Please specify one" id="clases">
+                                        <label class="ml-3" for="clases">Clases</label>
+                                        <select class="custom-select mr-sm-2 ml-3" required="required"  data-error="Please specify one" id="clases">
                                             <option selected disabled>Choose one option</option>
                                             <option value="piano">Piano</option>
                                             <option value="guitar">Guitar</option>
@@ -123,21 +114,21 @@
                                     </div>
                                     <div class="form-text"> 
                                     <p>Your message</p>
-                                        <textarea name="text" rows="5" cols="40" placeholder="Write your inquiry here">
+                                        <textarea name="text"  placeholder="Write your inquiry here">
                                         </textarea>
                                     </div>
                                 </div>
                                 <br>
-                                <button type="submit" class="btn btn-submit btn-light" value="submit">Submit</button>
+                                <button type="submit" class="btn btn-submit btn-light offset-5" value="submit">Submit</button>
                                 </form>
                             </div>
                            
                         </div>
                     </section>
             </div>
-            
+        </div>
             <footer class="row col-12">
-                <div class="col-6 offset-3">
+                <div class="col-12">
                     <p>Follow us</p>
                     <ul class="navbar d-flex justify-content-center">
                         <li><a class="nav-link" href="#"> <i class="fab fa-instagram"> <span class="d-none d-sm-inline"> Instagram</span></i></a></li>
@@ -146,7 +137,7 @@
                     </ul>
                 </div>
             </footer>
-        </div>
+        
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     </body>
