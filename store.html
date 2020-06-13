@@ -21,18 +21,20 @@
 
          <!-- Navigation menus-->
             <div class="row">
-                <nav class="navbar col-2 navbar-expand-sm">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <!----Navigation when on small screen-------->
+                <nav class="navbar col-2 navbar-expand-sm d-sm-none">
+                    <div class="logosmall d-sm-none">
+                        <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
+                    </div>
+                    <button class="navbar-toggler collapsed navbar-left" type="button" data-toggle="collapse" data-target="#navbar" 
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav flex-sm-column">
-                            <div class="logo">
-                                <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
-                            </div>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="school.html">Our School</a>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav d-block d-sm-none">
+                                
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html"> Contact Us</a>
@@ -43,15 +45,35 @@
                         </ul>
                     </div>
                 </nav>
-
-                 <header class="home-hero-store col-10 offset-2">
-                <!--Home-hero contains the music image-->
-                    <div class="hero-text jumbotron col-xs-2">
-                        <h2>Go further</h2>
-                        <p>Your place to find the music knowledge and the perfect instrument to play!</p>
+            <!----Navigation when on big screen-------->
+            
+                    <div class="col-2 d-none d-sm-block">
+                        <ul class="navbar-nav">
+                            <div class="logo">
+                                <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
+                            </div>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
                     </div>
-                </header>
-            </div>
+
+             <!--Home-hero contains the music image-->
+             
+                    <header class="home-hero-store  col-10 d-inline">
+                        <div class="hero-text jumbotron col-xs-2">
+                            <h2>Go further</h2>
+                            <p>Your place to find the music knowledge and the perfect instrument to play!</p>
+                        </div>
+                    </header>
+                
+             </div>
 
         <!---Section  specific content of the page----->
             <div class="row">

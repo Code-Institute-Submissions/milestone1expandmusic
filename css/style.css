@@ -15,8 +15,14 @@
     border-color:#60342e;
 }
 
-header{
+
+.jumbotron h2{
     border-color: fuchsia;
+    border-style: solid;
+}
+
+.jumbotron p{
+    border-color: red;
     border-style: solid;
 }
 
@@ -156,10 +162,10 @@ nav{
 
 
 
-/*-------------Header---------------------
+/*-------------Header from home page---------------------
 Background image from home-hero class. Credit: Stefany Andrade https://unsplash.com/photos/GbSCAAsU2Fo 
 Background image from home-hero-school class. Credit: Valentino-funghi https://unsplash.com/photos/VRr9a2rOoBI 
-Background image from home-hero-school class. Credit: Thomas Kelley https://unsplash.com/photos/2ZWCDBuw1B8 */
+Background image from home-hero-store class. Credit: Thomas Kelley https://unsplash.com/photos/2ZWCDBuw1B8 */
 .home-hero{
  background: url("../images/header-home.jpg") center no-repeat; 
  background-size: cover;
@@ -173,40 +179,6 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
  line-height: 1;
  width: 100%;
  
-  
-}
-.home-hero-school{
- background: url("../images/school.jpg") center no-repeat; 
- background-size: cover;
- display: flex inline;
- align-items: center;
- justify-content: center;
- position: relative;
- border-color: black;
- border-style: solid;
- margin: 0;
- padding: 0;
- color: #25282b;
- line-height: 1;
- 
-  
-}
-
-.home-hero-store{
- background: url("../images/store.jpg") center no-repeat; 
- background-size: cover;
- display: flex inline;
- align-items: center;
- justify-content: center;
- position: relative;
- border-color: black;
- border-style: solid;
- margin: 0;
- padding: 0;
- color: #25282b;
- line-height: 1;
- height: 300px; /* */
-  
 }
 
 .hero-text {
@@ -214,16 +186,18 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
     opacity: 0.8;
     color: #b39f77;
     width: 100%;
-    display: flex;
     margin: 20px 20px;
-    padding: 10px;
+    padding: 20px;
     border: solid;
     border-color:#60342e;
 }
 @media (min-width: 300px) {
     .jumbotron {
-        font-size: 4em;
-        width:57%;
+        font-size: 3em;
+        width:60%;
+        height: 85%;
+        padding-top:0;
+        margin-top: 5px;;
     }
 }
 
@@ -234,13 +208,56 @@ Background image from home-hero-school class. Credit: Thomas Kelley https://unsp
 }
 .hero-text p{
     font-weight: 400;
-    padding: 20px 20px;
-    
+    margin-top: 20px;
     font-size: 18px;
-    position: relative;
-    
-   
+
 }
+
+@media (max-width: 300px) {
+    .hero-text p{
+        font-size: 15px;
+        padding: 0;
+        line-height: 20px;
+        margin:0;
+        
+    }
+}
+
+/*-------------Header from school page---------------------
+Background image from home-hero-school class. Credit: Valentino-funghi https://unsplash.com/photos/VRr9a2rOoBI  */
+
+.home-hero-school{
+ background: url("../images/school.jpg") center no-repeat; 
+ background-size: cover;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ border-color: black;
+ border-style: solid;
+ padding: 0;
+ color: #25282b;
+ line-height: 1;
+ width: 100%;
+ 
+}
+/*-------------Header from store page---------------------
+Background image from home-hero-store class. Credit: Thomas Kelley https://unsplash.com/photos/2ZWCDBuw1B8 */
+
+.home-hero-store{
+ background: url("../images/store.jpg") center no-repeat; 
+ background-size: cover;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ border-color: black;
+ border-style: solid;
+ padding: 0;
+ color: #25282b;
+ line-height: 1;
+ width: 100%; /* */
+  
+}
+
 /*-------------Central Section home and common------------*/
 
 
