@@ -22,16 +22,18 @@
          <!-- Navigation menus-->
             <!-- Navigation menus-->
             <div class="row">
-                <nav class="navbar col-2 navbar-expand-sm">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <!----Navigation when on small screen-------->
+                <nav class="navbar col-2 navbar-expand-sm d-sm-none">
+                    <div class="logosmall d-sm-none">
+                        <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
+                    </div>
+                    <button class="navbar-toggler collapsed navbar-left" type="button" data-toggle="collapse" data-target="#navbar" 
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav flex-sm-column">
-                            <div class="logo">
-                                <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
-                            </div>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav d-block d-sm-none">
+                                
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html">Home</a>
                             </li>
@@ -44,16 +46,35 @@
                         </ul>
                     </div>
                 </nav>
+            <!----Navigation when on big screen-------->
             
+                    <div class="col-2 d-none d-sm-block">
+                        <ul class="navbar-nav">
+                            <div class="logo">
+                                <a class="nav-link" href="index.html" title="Expand Music Logo"></a>
+                            </div>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="store.html">Our store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"> Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
              <!--Home-hero contains the music image-->
              
-                 <header class="home-hero  col-10 d-inline">
-                    <div class="hero-text jumbotron col-xs-2">
-                        <h2>Go further</h2>
-                        <p>Your place to find the music knowledge and the perfect instrument to play!</p>
-                    </div>
-                </header>
-            </div>
+                    <header class="home-hero  col-10 d-inline">
+                        <div class="hero-text jumbotron col-xs-2">
+                            <h2>Go further</h2>
+                            <p>Your place to find the music knowledge and the perfect instrument to play!</p>
+                        </div>
+                    </header>
+                
+             </div>
 
         <!---Section  specific content of the page----->
             <div class="row">
@@ -62,12 +83,13 @@
                         <div class="row d-flex justify-content-center">
                             <div class="feature-about col-sm-6">
                                 <h3>Our history</h3>
-                                <p>Launched in 2011 and started as a Music Education school now we also offer instruments from our store with over 5000 customers in our store, we leading retailer of musical instruments and music equipment. 
+                                <p>Launched in 2011 and started as a Music Education school now we also offer instruments from our store with over 5000 customers in our store, 
+                                we leading retailer of musical instruments and music equipment. 
                                 You can buy music from orchestral instruments to rock, including guitars, drums, digital pianos, saxophones and cellos.
                                 Whatever you're looking for we can help. We've got some of the best brands in stock.
                                 Our students get special offers when purhcasing instruments from us.
-                                To receive advice and a great prices on your next instrument purchase, <mark> contact us now!</mark>
-                                </p>
+                                To receive advice and a great prices on your next instrument purchase</p> 
+                                <mark> <a href="contact.html"> contact us now!</a></mark>
                             </div>
 
                             <div class="feature-about col-sm-6">
@@ -85,9 +107,9 @@
                 <div class="col-12">
                     <p>Follow us</p>
                     <ul class="navbar d-flex justify-content-center">
-                        <li><a class="nav-link" href="#"> <i class="fab fa-instagram"> <span class="d-none d-sm-inline"> Instagram</span></i></a></li>
-                        <li><a class="nav-link" href="#"><i class="fab fa-youtube-square"><span class="d-none d-sm-inline"> Youtube</span></i></a></li>
-                        <li><a  class="nav-link" href="#"><i class="fab fa-facebook-square"><span class="d-none d-sm-inline"> Facebook</span></i></a></li>
+                        <li><a class="nav-link" href="https://www.instagram.com/" target="blank"> <i class="fab fa-instagram"> <span class="d-none d-sm-inline"> Instagram</span></i></a></li>
+                        <li><a class="nav-link" href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube-square"><span class="d-none d-sm-inline"> Youtube</span></i></a></li>
+                        <li><a  class="nav-link" href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-square"><span class="d-none d-sm-inline"> Facebook</span></i></a></li>
                     </ul>
                 </div>
             </footer>

@@ -57,11 +57,6 @@ section {
     background-color:  #cbcbc9;
 }
 
-footer div{
-    border-style: solid;
-    border-color: blue;
-    
-}
 
 footer ul{
    
@@ -117,11 +112,12 @@ Logo image created from Free logo maker looka.com */
 .logosmall{
     background: url("../images/Logo.jpg") center no-repeat; 
     background-size: cover;
-    margin: 0px;
+    margin-left:0;
     padding: 60% 100%;
     width: 100%;
     border-color: brown;
     border-style: solid;
+    float: left;
     
 }
 
@@ -134,6 +130,12 @@ nav{
     z-index:2;
     
 }
+
+.navbar-left{
+    display: inline;
+
+}
+
 .navbar-nav {
     list-style: none;
     margin: 0;
@@ -254,12 +256,26 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
  padding: 0;
  color: #25282b;
  line-height: 1;
- width: 100%; /* */
+ width: 100%; 
   
 }
 
 /*-------------Central Section home and common------------*/
 
+.col-10{
+    padding-right: 0;
+    padding-left: 0;
+}
+.col-sm-5{
+    
+    margin-right: 10px;
+    margin-left: 0;
+}
+.section{
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
 
 .options h2{
       color: #1d282a;
@@ -268,6 +284,7 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
       margin-top: 5px;
 }
 
+
 .feature{
      border: 1px solid;
      border-radius: 5px;
@@ -275,8 +292,9 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
      box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
      margin-left: 20px;
      margin-bottom: 20px;
-    
+     
 }
+
 
 .feature h3{
     margin-left: 0px;
@@ -286,11 +304,7 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.section{
-    margin-left: 0;
-    padding-left: 0;
-  
-}
+
 
 .btn:hover{
 background-color: #1d282a; 
@@ -301,20 +315,26 @@ color: #b7a786;
 .feature .btn{
     border-style: solid;
     border-color: #25282b;
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    
 }
 
 /*-------------Central Section school------------*/
 .options-courses h2, h3{
       color: #1d282a;
-      margin: 20px 20px 0px;
-      border-style: solid;
+      margin: 10px 20px 10px;
+      
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 .feature-course{
     border: 1px solid;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-left: 20px;
     -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
     box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
@@ -361,9 +381,16 @@ Background image from Store page Percussion category. Credit: Free for personal 
     background: url("../images/piano.png") right no-repeat; 
     background-size: contain;
     background-color: rgba(244, 244, 244, 0.4);
-    display: flex inline;
+    
     z-index: 1;
     
+}
+
+@media (min-width: 300px) {
+    .pianos {
+        background-size: 50% 50%;
+        
+    }
 }
 
 .guitars{
@@ -372,7 +399,13 @@ Background image from Store page Percussion category. Credit: Free for personal 
     background-color: rgba(244, 244, 244, 0.4);
     display: flex inline;
     z-index: 2;
-    
+}
+
+@media (min-width: 300px) {
+    .guitars {
+        background-size: 50% 50%;
+        
+    }
 }
 
 .strings{
@@ -381,7 +414,13 @@ Background image from Store page Percussion category. Credit: Free for personal 
     background-color: rgba(244, 244, 244, 0.4);
     display: flex inline;
     z-index: 2;
-    
+}
+
+@media (min-width: 300px) {
+    .strings {
+        background-size: 50% 50%;
+        
+    }
 }
 
 .percussion{
@@ -390,7 +429,13 @@ Background image from Store page Percussion category. Credit: Free for personal 
     background-color: rgba(244, 244, 244, 0.4);
     display: flex inline;
     z-index: 2;
-    
+}
+
+@media (min-width: 300px) {
+    .percussion {
+        background-size: 50% 50%;
+        
+    }
 }
 
 /*-------------Central section Contact page-------*/
@@ -399,49 +444,38 @@ Background image from Store page Percussion category. Credit: Free for personal 
     border: 1px solid;
     border-radius: 5px;
     margin-bottom: 10px;
-    margin-left: 0px;
+    margin-left: 10px;
+    margin-right: 0;
     color: #1d282a;
     background-color:rgba(240, 240, 240,1);
     
 }
-.feature-contact h2{
-    border-style: solid;
+.form-row{
+    margin-top: 2px;
 }
 
-input:invalid {
-  border: 2px solid red;
-}
 
 .form-row{
     margin-left: 0;
 }
 
-
-
 .gender{
-    border-style: solid;
+    border: 1px solid;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 .form-check{
-     border-style: solid;
+     
     border-radius: 5px;
     margin-top: 10px;
-
+    
 }
 
 .form-classes{
     margin-top: 5px;
 }
 
-textarea:invalid {
-  border: 2px solid red;
-}
-
-textarea:valid {
-   border: 2px solid lime;
-}
 
 .btn-submit{
     border-style: solid;
@@ -453,9 +487,25 @@ textarea:valid {
 .feature-about{
     border: 1px solid;
     border-radius: 5px;
-    margin-bottom: 5px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
+    box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
+     
+}
+
+.feature-about h3{
+    margin-left: 0px;
+    margin-bottom: 5px;
+    border: 0;
+    margin-top: 2px;
+}
+
+
+mark a{
+    text-decoration: none;
+    color: #1d282a;
 }
 
 
@@ -464,7 +514,6 @@ textarea:valid {
 
 footer{
     border-style: solid;
-    border-color: red;
     margin: 0;
     padding: 0;
     background-color: #1d282a;
@@ -477,12 +526,9 @@ footer{
 
 
 footer p{
-    
     text-align: center;
-    border-style: solid;
-    border-color: red;
     max-height: fit-content;
-    
+    margin-top: 10px;
 }
 
 
