@@ -7,7 +7,7 @@ The first milestone project from the Full Stack Developer course with Code Insti
 The project is made based on the first modules of the course that cover HTML CSS and Bootstrap technologies.
 It also uses Google fonts links ref and fontawesome kit reference link for icons.
 
->User Case
+User Case
 **Expand Music** is a company that provides two differenciated services. It is a school to learn to play instruments and it is also a store that can sell instruments to their students and general public.
 
 The structure of the website has been mantained through all pages, there are 3 differenciated rows: 
