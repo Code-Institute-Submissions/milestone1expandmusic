@@ -1,77 +1,50 @@
 
 /*-------------Colors---------------------*/
-.body{
-    border-style: solid;
-    border-color: purple;
-    
-}
 
 .container-fluid{
-     border-color: green;
      background-color:  #cbcbc9;
-}
-
-.logo{
-    border-color:#60342e;
-}
-
-
-.jumbotron h2{
-    border-color: fuchsia;
-    border-style: solid;
-}
-
-.jumbotron p{
-    border-color: red;
-    border-style: solid;
 }
 
 .nav{
     border-color:#60342e;
     background-color: #cbcbc9;
-
-}
-
-.nav ul{
-    border-color: pink;
-    border-style: solid;
-
-}
-
-.navbar-nav li{
-    border-style: solid;
-    border-color: orange;
 }
 
 .navbar-nav li a:hover{
     color: #b7a786;
 }
 
-.row{
-    border-style: solid;
-    border-color: yellow;
-    
-}
-
 section {
     background-color:  #cbcbc9;
 }
-
+footer p{
+    color: #b7a786;
+}
 
 footer ul{
-   
     border-style: solid;
     border-color: orange;
 }
+
+footer ul li a{
+    color: #cbcbc9;
+}
+
+footer ul li a:hover{
+    color: #b7a786;
+}
+
+footer ul li a i:hover{
+    color: #b7a786;
+}
+
 /*------------Tests---------------*/
 html, body{
-            
             height: 100%;
             margin: 0;
             padding: 0; 
             border: 0;
             min-width: 100%;
-
 }
 
 /*------------Container and rows---------------*/
@@ -86,14 +59,13 @@ html, body{
   position: relative;
   min-height: 100%;
   width: 100%;
-  
 }
 
 
 .row{
     padding: 0;
     margin: 0;
-    
+    margin-bottom: 5px;
 }
 
 /*-------------Logo------------------------
@@ -107,6 +79,7 @@ Logo image created from Free logo maker looka.com */
     width: 100%;
     display: block;
     border-style: solid;
+    border-color: #25282b;
 }
 
 .logosmall{
@@ -115,7 +88,7 @@ Logo image created from Free logo maker looka.com */
     margin-left:0;
     padding: 60% 100%;
     width: 100%;
-    border-color: brown;
+    border-color: #25282b;
     border-style: solid;
     float: left;
     
@@ -127,13 +100,11 @@ nav{
     margin: 0;
     padding: 0;
     border-style: solid;
-    z-index:2;
-    
+    z-index:2; 
 }
 
 .navbar-left{
     display: inline;
-
 }
 
 .navbar-nav {
@@ -141,15 +112,14 @@ nav{
     margin: 0;
     width: 100%;
     font-size: 16px;
-    text-align: left;
+    text-align: justify;
     padding-left: 0;
     display: inline;
     float: left;
-    
 }
 
 .navbar-nav li a{
-    color: #1d282a;
+    color: #25282b;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -157,17 +127,14 @@ nav{
     border: 0;
     width: 100%;
 }
+
 .navbar .navbar-toggler {
-    border: 0;
-    
+    border: 0; 
 }
 
 
-
 /*-------------Header from home page---------------------
-Background image from home-hero class. Credit: Stefany Andrade https://unsplash.com/photos/GbSCAAsU2Fo 
-Background image from home-hero-school class. Credit: Valentino-funghi https://unsplash.com/photos/VRr9a2rOoBI 
-Background image from home-hero-store class. Credit: Thomas Kelley https://unsplash.com/photos/2ZWCDBuw1B8 */
+Background image from home-hero class. Credit: Stefany Andrade https://unsplash.com/photos/GbSCAAsU2Fo */
 .home-hero{
  background: url("../images/header-home.jpg") center no-repeat; 
  background-size: cover;
@@ -193,6 +160,7 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
     border: solid;
     border-color:#60342e;
 }
+
 @media (min-width: 300px) {
     .jumbotron {
         font-size: 3em;
@@ -200,6 +168,15 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
         height: 85%;
         padding-top:0;
         margin-top: 5px;;
+    }
+}
+
+@media (min-width: 700px) {
+    .jumbotron {
+        font-size: 3em;
+        height: 65%;
+        padding-top:0;
+        margin-top: 10px;;
     }
 }
 
@@ -284,27 +261,23 @@ Background image from home-hero-store class. Credit: Thomas Kelley https://unspl
       margin-top: 5px;
 }
 
-
 .feature{
      border: 1px solid;
      border-radius: 5px;
      -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
      box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
      margin-left: 20px;
-     margin-bottom: 20px;
-     
+     margin-bottom: 20px;  
 }
-
 
 .feature h3{
     margin-left: 0px;
     margin-bottom: 5px;
 }
+
 .feature h3 span{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
 
 .btn:hover{
 background-color: #1d282a; 
@@ -318,37 +291,33 @@ color: #b7a786;
     position: relative;
     margin-left: 5px;
     margin-bottom: 2px;
-    
 }
 
 /*-------------Central Section school------------*/
 .options-courses h2, h3{
-      color: #1d282a;
+      color: #25282b;
       margin: 10px 20px 10px;
-      
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
 .feature-course{
     border: 1px solid;
+    border-color: #25282b;
     border-radius: 5px;
     margin-bottom: 10px;
     margin-left: 20px;
     -webkit-box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73); 
     box-shadow: 4px 4px 21px -3px rgba(0,0,0,0.73);
-    
+}
+
+.feature-course h4{
+    padding-top: 10px;
+
 }
 
 .feature-course .btn{
     border: 1px solid;
-
-}
-
-.courses{
-    border-style: solid;
-    border-color: yellow;
+    border-color: #25282b;
 }
 
 
@@ -381,7 +350,6 @@ Background image from Store page Percussion category. Credit: Free for personal 
     background: url("../images/piano.png") right no-repeat; 
     background-size: contain;
     background-color: rgba(244, 244, 244, 0.4);
-    
     z-index: 1;
     
 }
@@ -389,6 +357,13 @@ Background image from Store page Percussion category. Credit: Free for personal 
 @media (min-width: 300px) {
     .pianos {
         background-size: 50% 50%;
+        
+    }
+}
+
+@media (min-width: 800px) {
+    .pianos {
+        background-size: contain;
         
     }
 }
@@ -404,6 +379,17 @@ Background image from Store page Percussion category. Credit: Free for personal 
 @media (min-width: 300px) {
     .guitars {
         background-size: 50% 50%;
+        
+    }
+@media (min-width: 800px) {
+    .guitars {
+        background-size: 60% 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .guitars {
+        background-size: contain;
         
     }
 }
@@ -423,6 +409,13 @@ Background image from Store page Percussion category. Credit: Free for personal 
     }
 }
 
+@media (min-width: 800px) {
+    .strings {
+        background-size: contain;
+        
+    }
+}
+
 .percussion{
     background: url("../images/drums.png") right no-repeat; 
     background-size: contain;
@@ -438,6 +431,20 @@ Background image from Store page Percussion category. Credit: Free for personal 
     }
 }
 
+@media (min-width: 800px) {
+    .percussion {
+        background-size: 60% 60%;
+        
+    }
+}
+
+@media (min-width: 1000px) {
+    .percussion {
+        background-size: contain;
+        
+    }
+}
+
 /*-------------Central section Contact page-------*/
 
 .feature-contact{
@@ -447,15 +454,11 @@ Background image from Store page Percussion category. Credit: Free for personal 
     margin-left: 10px;
     margin-right: 0;
     color: #1d282a;
-    background-color:rgba(240, 240, 240,1);
-    
+    background-color:rgba(240, 240, 240,0.5);
 }
+
 .form-row{
     margin-top: 2px;
-}
-
-
-.form-row{
     margin-left: 0;
 }
 
@@ -469,7 +472,6 @@ Background image from Store page Percussion category. Credit: Free for personal 
      
     border-radius: 5px;
     margin-top: 10px;
-    
 }
 
 .form-classes{
@@ -481,8 +483,8 @@ Background image from Store page Percussion category. Credit: Free for personal 
     border-style: solid;
     border-color: #25282b;
     margin-bottom: 10px;
-    
 }
+
 /*---------central section About page-------*/
 .feature-about{
     border: 1px solid;
@@ -534,17 +536,4 @@ footer p{
 
 footer ul li{
     list-style: none;
-    background-color: #1d282a;
-}
-footer ul li a{
-    color: #cbcbc9;
-    
-}
-
-footer ul li a:hover{
-    color: #b7a786;
-}
-
-footer ul li a i:hover{
-    color: #b7a786;
 }
